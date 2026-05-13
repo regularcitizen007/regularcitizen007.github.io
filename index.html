@@ -1,11 +1,223 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>RCE ARCHIVE</title>
-<h1 style="text-align: center;">CLASSIFIED ARCHIVE</h1>
-<h2 style="text-align: center;">Do Not Share</h2>
-<p style="text-align: center;">R.C.E</p>
-<hr />
-<p style="text-align: center;">&nbsp;</p>
-<p style="text-align: center;"><span style="text-decoration: underline;"><em>ARCHIVE01</em></span></p>
-<p style="text-align: center;"><a title="Steakout" href="https://www.youtube.com/watch?v=YeyE2GkGG_M&amp;t=18s">Archive01-STEAKOUT</a></p>
-<p style="text-align: center;"><a title="Archive01-Gate4Active" href="https://github.com/regularcitizen007/regularcitizen007.github.io/blob/main/cp_well0010_ntsc.png?raw=true">Archive01-GATETF1</a></p>
-<p style="text-align: center;"><a title="Archive01-Expedition" href="https://github.com/regularcitizen007/regularcitizen007.github.io/blob/main/cp_well0011_ntsc.png?raw=true">Archive01-RCEEXPEDITIONSRCETF04</a></p>
-<p style="text-align: center;"><a title="Archive01-PreDisaster00GROUPBANNERYT2012-2014" href="https://github.com/regularcitizen007/regularcitizen007.github.io/blob/main/cp_granary0013_ntsc.png?raw=true">Archive01-PreDisaster00GROUPBANNERYT2012-2014</a></p>
+
+<style>
+    body {
+        margin: 0;
+        background-color: #0a0f0d;
+        color: #b7c9b0;
+        font-family: "Courier New", monospace;
+        background-image:
+            linear-gradient(rgba(0,255,120,0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,255,120,0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+
+    .scanlines::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        background: repeating-linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.02),
+            rgba(255,255,255,0.02) 1px,
+            transparent 1px,
+            transparent 3px
+        );
+        opacity: 0.15;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 50px auto;
+        border: 1px solid #294236;
+        background: rgba(5, 12, 8, 0.92);
+        box-shadow: 0 0 25px rgba(0,255,120,0.08);
+        padding: 40px;
+    }
+
+    .seal {
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 4px;
+        color: #7f9b82;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #d4e6d0;
+        letter-spacing: 6px;
+        margin-bottom: 5px;
+        font-size: 42px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #8da58d;
+        font-weight: normal;
+        letter-spacing: 3px;
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .classified {
+        text-align: center;
+        border: 1px solid #47614d;
+        display: inline-block;
+        padding: 8px 20px;
+        margin: 20px auto;
+        color: #d5f7d5;
+        background: rgba(0,255,120,0.06);
+        letter-spacing: 2px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #294236;
+        margin: 30px 0;
+    }
+
+    .archive-section {
+        margin-top: 40px;
+    }
+
+    .archive-title {
+        text-align: center;
+        font-size: 18px;
+        color: #d7ead1;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+        text-decoration: underline;
+    }
+
+    .entry {
+        border-left: 3px solid #3d5a45;
+        background: rgba(255,255,255,0.015);
+        padding: 15px 20px;
+        margin-bottom: 18px;
+        transition: all 0.2s ease;
+    }
+
+    .entry:hover {
+        background: rgba(0,255,120,0.04);
+        border-left-color: #86b18f;
+    }
+
+    .entry-code {
+        color: #7f9b82;
+        font-size: 12px;
+        margin-bottom: 6px;
+        letter-spacing: 2px;
+    }
+
+    a {
+        color: #d5f7d5;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    .footer {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 11px;
+        color: #5e7463;
+        letter-spacing: 2px;
+    }
+
+    .blink {
+        animation: blink 1.2s infinite;
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0.4;
+        }
+    }
+</style>
+</head>
+
+<body class="scanlines">
+
+<div class="container">
+
+    <div class="seal">
+        UNITED NETWORK ARCHIVE NODE
+    </div>
+
+    <h1>R.C.E ARCHIVE</h1>
+    <h2>RESTRICTED COMMUNICATIONS EVIDENCE</h2>
+
+    <div class="center">
+        <div class="classified">
+            CLASSIFIED // INTERNAL ACCESS ONLY
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="archive-section">
+
+        <div class="archive-title">
+            ARCHIVE01
+        </div>
+
+        <div class="entry">
+            <div class="entry-code">FILE ID // STEAKOUT-01</div>
+            <a href="https://www.youtube.com/watch?v=YeyE2GkGG_M&t=18s">
+                Archive01-STEAKOUT
+            </a>
+        </div>
+
+        <div class="entry">
+            <div class="entry-code">FILE ID // GATETF1</div>
+            <a href="https://github.com/regularcitizen007/regularcitizen007.github.io/blob/main/cp_well0010_ntsc.png?raw=true">
+                Archive01-GATETF1
+            </a>
+        </div>
+
+        <div class="entry">
+            <div class="entry-code">FILE ID // EXPEDITION-TF04</div>
+            <a href="https://github.com/regularcitizen007/regularcitizen007.github.io/blob/main/cp_well0011_ntsc.png?raw=true">
+                Archive01-RCEEXPEDITIONSRCETF04
+            </a>
+        </div>
+
+        <div class="entry">
+            <div class="entry-code">FILE ID // PRE-DISASTER-00</div>
+            <a href="https://github.com/regularcitizen007/regularcitizen007.github.io/blob/main/cp_granary0013_ntsc.png?raw=true">
+                Archive01-PreDisaster00GROUPBANNERYT2012-2014
+            </a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer">
+        WARNING: UNAUTHORIZED DISTRIBUTION OF ARCHIVED MATERIAL IS PROHIBITED<br>
+        NODE STATUS: <span class="blink">ACTIVE</span>
+    </div>
+
+</div>
+
+</body>
+</html>
+```
